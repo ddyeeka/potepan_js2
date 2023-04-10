@@ -1,0 +1,38 @@
+body {
+  background-color: white;
+}
+
+#result {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 2px;
+  text-align: right;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+.first_step, .second_step, .third_step, .forth_step, .fifth_step {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+
+.number {
+  width: 100%;
+  height: 40px;
+  margin: 2px 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.symbol {
+  width: 100%;
+  height: 40px;
+  margin: 2px 2px;
+  font-weight: bold;
+  font-size: 25px;
+}

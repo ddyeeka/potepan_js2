@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
+<title>電卓</title>
+</head>
+
+<body>
+  
+<div>
+  <div>
+    <input readonly type="text" value="0" id="result"/>
+  </div>
+  <div class="first_step">
+    <button type="text" class="number" value="7" id="num7" onclick="eventNum(this.innerHTML)">7</button>
+    <button type="text" class="number" value="8" id="num8" onclick="eventNum(this.innerHTML)">8</button>
+    <button type="text" class="number" value="9" id="num9" onclick="eventNum(this.innerHTML)">9</button>
+    <button type="text" class="number" value="+" id="plus" onclick="eventOpe(this.innerHTML)">+</button>
+  </div>
+  <div class="second_step">
+    <button type="text" class="number" value="4" id="num4" onclick="eventNum(this.innerHTML)">4</button>
+    <button type="text" class="number" value="5" id="num5" onclick="eventNum(this.innerHTML)">5</button>
+    <button type="text" class="number" value="6" id="num6" onclick="eventNum(this.innerHTML)">6</button>
+    <button type="text" class="number" value="-" id="minus" onclick="eventOpe(this.innerHTML)">-</button>
+  </div>
+  <div class="third_step">
+    <button type="text" class="number" value="1" id="num1" onclick="eventNum(this.innerHTML)">1</button>
+    <button type="text" class="number" value="2" id="num2" onclick="eventNum(this.innerHTML)">2</button>
+    <button type="text" class="number" value="3" id="num3" onclick="eventNum(this.innerHTML)">3</button>
+    <button type="text" class="number" value="*" id="multiplied" onclick="eventOpe(this.innerHTML)">*</button>
+  </div>
+  <div class="forth_step">
+    <button type="text" class="number" value="0" id="num0" onclick="eventNum(this.innerHTML)">0</button>
+    <button type="text" class="number" value="00" id="num00" onclick="eventNum(this.innerHTML)">00</button>
+    <button type="text" class="number" value="." id="dot" onclick="eventNum(this.innerHTML)">.</button>
+    <button type="text" class="number" value="/" id="divided" onclick="eventOpe(this.innerHTML)">/</button>
+  </div>
+  <div class="fifth_step">
+    <button type="text" class="symbol" value="AC" id="ac" onclick="eventAC()">AC</button>
+    <button type="text" class="symbol" value="=" id="equal" onclick="eventEqu()">=</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
